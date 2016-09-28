@@ -1,0 +1,17 @@
+{
+  "name": "ionic-conference-app",
+  "description": "Ionic Conference App",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bukujari/kbbi.git"
+  },
+  "scripts": {
+    "scrap": "node luwak-scrapper.js",
+    "compile": "node luwak-scrapper-compile.js"
+  },
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "luwak": "^2.0.1"
+  }
+}
