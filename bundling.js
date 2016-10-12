@@ -10,8 +10,7 @@ function readFileJSON(daftarKataList, index) {
   if(daftarKataList[index]) {
     console.log('./assets/kbbi/'+daftarKataList[index].uri+'.json');
     jsonfile.readFile('./assets/kbbi/'+daftarKataList[index].uri+'.json', function(err, kbbi){
-      // bundlingFile.push({uri: daftarKataList[index].uri, arti: kbbi.arti});
-      bundlingFile.push([`UPDATE kbbi SET arti=? WHERE uri=?`, [JSON.stringify(kbbi.arti), daftarKataList[index].uri]]);
+      bundlingFile.push([`INSERT INTO kbbi(keyword, uri, arti) VALUES(?,?,?)`, [daftarKataList[index].keyword, daftarKataList[index].uri, JSON.stringify(kbbi.arti)]]);
       readFileJSON(daftarKataList, ++index);
     });
   } else {
