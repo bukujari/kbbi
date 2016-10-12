@@ -8,9 +8,11 @@
   },
   "scripts": {
     "scrap": "node luwak-scrapper.js",
-    "compile": "node luwak-scrapper-compile.js"
+    "compile": "node luwak-scrapper-compile.js",
+    "bundling": "node bundling.js"
   },
   "dependencies": {
+    "async": "^2.0.1",
     "jsonfile": "^2.4.0",
     "luwak": "^2.0.1"
   }

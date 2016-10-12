@@ -6,7 +6,7 @@ const url = require('url');
 const qs = require('querystring');
 const sprintf = require("sprintf-js").sprintf;
 const userAgent = require('luwak/middlewares/user-agent.js');
-var jsonfile = require('jsonfile')
+var jsonfile = require('jsonfile');
 var path = 'assets/daftar-kata.json';
 
 try {
